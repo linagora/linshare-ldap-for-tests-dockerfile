@@ -1,128 +1,191 @@
 dn: ou=People,dc=linshare,dc=org
 changetype: add
-ou: People
-objectClass: organizationalUnit
 objectClass: top
+objectClass: organizationalUnit
+ou: People
 description: People subtree
 
 dn: ou=Groups,dc=linshare,dc=org
 changetype: add
-ou: Groups
-objectClass: organizationalUnit
 objectClass: top
+objectClass: organizationalUnit
+ou: Groups
 description: Groups subtree
 
 dn: uid=user1,ou=People,dc=linshare,dc=org
 changetype: add
-uid: user1
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: user1
+cn: Doe, John
+mail: user1@linshare.org
 sn: Doe
 givenName: John
-cn: Doe, John
 userPassword: password1
-mail: user1@linshare.org
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/user1@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/user1@linshare.org/Maildir
+mailUidNumber: 5000
 
 dn: uid=user2,ou=People,dc=linshare,dc=org
 changetype: add
-uid: user2
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: user2
+cn: Smith, Jane
+mail: user2@linshare.org
 sn: Smith
 givenName: Jane
-cn: Smith, Jane
 userPassword: password2
-mail: user2@linshare.org
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/user2@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/user2@linshare.org/Maildir
+mailUidNumber: 5000
 
 dn: uid=user3,ou=People,dc=linshare,dc=org
 changetype: add
-uid: user3
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: user3
+cn: Foo, Bar
+mail: user3@linshare.org
 sn: Foo
 givenName: Bar
-cn: Foo, Bar
 userPassword: password3
-mail: user3@linshare.org
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/user3@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/user3@linshare.org/Maildir
+mailUidNumber: 5000
 
 dn: uid=user4,ou=People,dc=linshare,dc=org
 changetype: add
-uid: user4
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: user4
+cn: Foo2, Bar2
+mail: user4@linshare.org
 sn: Foo2
 givenName: Bar2
-cn: Foo2, Bar2
 userPassword: password4
-mail: user4@linshare.org
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/user4@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/user4@linshare.org/Maildir
+mailUidNumber: 5000
 
 dn: uid=user5,ou=People,dc=linshare,dc=org
 changetype: add
-uid: user5
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: user5
+cn: Peter, Parker
+mail: user5@linshare.org
 sn: Peter
 givenName: Parker
-cn: Peter, Parker
 userPassword: password5
-mail: user5@linshare.org
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/user5@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/user5@linshare.org/Maildir
+mailUidNumber: 5000
 
 dn: uid=user6,ou=People,dc=linshare,dc=org
 changetype: add
-uid: user6
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: user6
+cn: Bruce, Wane
+mail: user6@linshare.org
 sn: Bruce
 givenName: Wane
-cn: Bruce, Wane
 userPassword: password6
-mail: user6@linshare.org
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/user6@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/user6@linshare.org/Maildir
+mailUidNumber: 5000
 
 dn: uid=user7,ou=People,dc=linshare,dc=org
 changetype: add
-uid: user7
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: user7
+cn: Oliver, Twist
+mail: user7@linshare.org
 sn: Oliver
 givenName: Twist
-cn: Oliver, Twist
 userPassword: password7
-mail: user7@linshare.org
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/user7@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/user7@linshare.org/Maildir
+mailUidNumber: 5000
 
 dn: uid=test1,ou=People,dc=linshare,dc=org
 changetype: add
-uid: test1
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
-sn: Test1
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: test1
 cn: Test, Test1
-userPassword: password1
 mail: test1@linshare.org
+sn: Test1
+userPassword: password1
+mailEnabled: TRUE
 
 dn: uid=test2,ou=People,dc=linshare,dc=org
 changetype: add
-uid: test2
-objectClass: inetOrgPerson
-objectClass: organizationalPerson
-objectClass: person
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
 objectClass: top
-sn: Test2
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: test2
 cn: Test, Test2
-userPassword: password2
 mail: test2@linshare.org
+sn: Test2
+userPassword: password2
+mailEnabled: TRUE
+
