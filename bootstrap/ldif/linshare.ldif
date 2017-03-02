@@ -32,6 +32,7 @@ mailHomeDirectory: /var/mail/user1@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/user1@linshare.org/Maildir
 mailUidNumber: 5000
+employeeType: Internal
 
 dn: uid=user2,ou=People,dc=linshare,dc=org
 changetype: add
@@ -53,6 +54,7 @@ mailHomeDirectory: /var/mail/user2@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/user2@linshare.org/Maildir
 mailUidNumber: 5000
+employeeType: Internal
 
 dn: uid=user3,ou=People,dc=linshare,dc=org
 changetype: add
@@ -74,6 +76,7 @@ mailHomeDirectory: /var/mail/user3@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/user3@linshare.org/Maildir
 mailUidNumber: 5000
+employeeType: Internal
 
 dn: uid=user4,ou=People,dc=linshare,dc=org
 changetype: add
@@ -95,6 +98,7 @@ mailHomeDirectory: /var/mail/user4@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/user4@linshare.org/Maildir
 mailUidNumber: 5000
+employeeType: Internal
 
 dn: uid=user5,ou=People,dc=linshare,dc=org
 changetype: add
@@ -116,6 +120,7 @@ mailHomeDirectory: /var/mail/user5@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/user5@linshare.org/Maildir
 mailUidNumber: 5000
+employeeType: Internal
 
 dn: uid=user6,ou=People,dc=linshare,dc=org
 changetype: add
@@ -126,10 +131,10 @@ objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 uid: user6
-cn: Bruce, Wane
+cn: Bruce, Wayne
 mail: user6@linshare.org
 sn: Bruce
-givenName: Wane
+givenName: Wayne
 userPassword: password6
 mailEnabled: TRUE
 mailGidNumber: 5000
@@ -137,6 +142,7 @@ mailHomeDirectory: /var/mail/user6@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/user6@linshare.org/Maildir
 mailUidNumber: 5000
+employeeType: Internal
 
 dn: uid=user7,ou=People,dc=linshare,dc=org
 changetype: add
@@ -158,6 +164,7 @@ mailHomeDirectory: /var/mail/user7@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/user7@linshare.org/Maildir
 mailUidNumber: 5000
+employeeType: Internal
 
 dn: uid=test1,ou=People,dc=linshare,dc=org
 changetype: add
@@ -173,6 +180,7 @@ mail: test1@linshare.org
 sn: Test1
 userPassword: password1
 mailEnabled: TRUE
+employeeType: Internal
 
 dn: uid=test2,ou=People,dc=linshare,dc=org
 changetype: add
@@ -188,4 +196,26 @@ mail: test2@linshare.org
 sn: Test2
 userPassword: password2
 mailEnabled: TRUE
+employeeType: Internal
 
+dn: uid=linagora,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: linagora
+cn: linagora
+mail: linagora@linshare.org
+sn: linagora
+givenName: linagora
+userPassword: linagora
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/linagora@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/linagora@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: Unknown
