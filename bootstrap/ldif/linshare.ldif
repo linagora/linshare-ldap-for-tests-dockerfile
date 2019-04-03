@@ -240,7 +240,7 @@ mailHomeDirectory: /var/mail/external1@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/external1@linshare.org/Maildir
 mailUidNumber: 5000
-employeeType: Unknown
+employeeType: External
 
 dn: uid=external2,ou=People,dc=linshare,dc=org
 changetype: add
@@ -262,4 +262,4 @@ mailHomeDirectory: /var/mail/external2@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/external2@linshare.org/Maildir
 mailUidNumber: 5000
-employeeType: Unknown
+employeeType: External
