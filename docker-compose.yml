@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+    ldap:
+        image: linagora/linshare-ldap-for-tests:1.0
+        container_name: linshare_ldap_dev
+        tty: true
+        stdin_open: true
+        ports:
+          - 389:389
