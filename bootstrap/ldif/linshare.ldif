@@ -263,3 +263,47 @@ mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/external2@linshare.org/Maildir
 mailUidNumber: 5000
 employeeType: External
+
+dn: uid=external3,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external3
+cn: External Three
+mail: external3@linshare.org
+sn: Three
+givenName: External
+userPassword: password3
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external3@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external3@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=external4,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external4
+cn: External Four
+mail: external4@linshare.org
+sn: Four
+givenName: External
+userPassword: password4
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external4@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external4@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
