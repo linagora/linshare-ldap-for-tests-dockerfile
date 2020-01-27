@@ -307,3 +307,135 @@ mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/external4@linshare.org/Maildir
 mailUidNumber: 5000
 employeeType: External
+
+dn: uid=external5,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external5
+cn: External Five
+mail: external5@linshare.org
+sn: Five
+givenName: External
+userPassword: password5
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external5@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external5@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest1,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest1
+cn: Guest One
+mail: guest1@linshare.org
+sn: One
+givenName: Guest
+userPassword: password1
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest1@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest1@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest2,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest2
+cn: Guest Two
+mail: guest2@linshare.org
+sn: Two
+givenName: Guest
+userPassword: password2
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest2@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest2@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest3,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest3
+cn: Guest Three
+mail: guest3@linshare.org
+sn: Three
+givenName: Guest
+userPassword: password3
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest3@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest3@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest4,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest4
+cn: Guest Four
+mail: guest4@linshare.org
+sn: Four
+givenName: Guest
+userPassword: password4
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest4@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest4@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest5,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest5
+cn: Guest Five
+mail: guest5@linshare.org
+sn: Five
+givenName: Guest
+userPassword: password5
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest5@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest5@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
