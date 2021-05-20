@@ -89,8 +89,8 @@ objectClass: inetOrgPerson
 uid: user3
 cn: Foo, Bar
 mail: user3@linshare.org
-sn: Foo
-givenName: Bar
+sn: Bar
+givenName: Foo
 userPassword: password3
 mailEnabled: TRUE
 mailGidNumber: 5000
@@ -109,10 +109,10 @@ objectClass: person
 objectClass: organizationalPerson
 objectClass: inetOrgPerson
 uid: user4
-cn: Foo2, Bar2
+cn: User4, Bar
 mail: user4@linshare.org
-sn: Foo2
-givenName: Bar2
+sn: Bar
+givenName: User4
 userPassword: password4
 mailEnabled: TRUE
 mailGidNumber: 5000
@@ -133,8 +133,8 @@ objectClass: inetOrgPerson
 uid: user5
 cn: Peter, Parker
 mail: user5@linshare.org
-sn: Peter
-givenName: Parker
+sn: Parker
+givenName: Peter
 userPassword: password5
 mailEnabled: TRUE
 mailGidNumber: 5000
@@ -155,8 +155,8 @@ objectClass: inetOrgPerson
 uid: user6
 cn: Bruce, Wayne
 mail: user6@linshare.org
-sn: Bruce
-givenName: Wayne
+sn: Wayne
+givenName: Bruce
 userPassword: password6
 mailEnabled: TRUE
 mailGidNumber: 5000
@@ -177,8 +177,8 @@ objectClass: inetOrgPerson
 uid: user7
 cn: Oliver, Twist
 mail: user7@linshare.org
-sn: Oliver
-givenName: Twist
+sn: Twist
+givenName: Oliver
 userPassword: password7
 mailEnabled: TRUE
 mailGidNumber: 5000
@@ -477,7 +477,7 @@ mailHomeDirectory: /var/mail/abbey.curry@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/abbey.curry@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: abbey.curry
 cn: Abbey CURRY
 mail: abbey.curry@linshare.org
@@ -500,7 +500,7 @@ mailHomeDirectory: /var/mail/amy.wolsh@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/amy.wolsh@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: amy.wolsh
 cn: Amy WOLSH
 mail: amy.wolsh@linshare.org
@@ -522,7 +522,7 @@ mailHomeDirectory: /var/mail/anderson.waxman@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/anderson.waxman@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: anderson.waxman
 cn: Anderson WAXMAN
 mail: anderson.waxman@linshare.org
@@ -545,7 +545,7 @@ mailHomeDirectory: /var/mail/cornell.able@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/cornell.able@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: cornell.able
 cn: Cornell ABLE
 mail: cornell.able@linshare.org
@@ -568,7 +568,7 @@ mailHomeDirectory: /var/mail/dawson.waterfield@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/dawson.waterfield@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: dawson.waterfield
 cn: Dawson WATERFIELD
 mail: dawson.waterfield@linshare.org
@@ -591,7 +591,7 @@ mailHomeDirectory: /var/mail/felton.gumper@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/felton.gumper@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: felton.gumper
 cn: Felton GUMPER
 mail: felton.gumper@linshare.org
@@ -614,7 +614,7 @@ mailHomeDirectory: /var/mail/grant.big@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/grant.big@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: grant.big
 cn: Grant BIG
 mail: grant.big@linshare.org
@@ -637,7 +637,7 @@ mailHomeDirectory: /var/mail/nick.derbies@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/nick.derbies@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: nick.derbies
 cn: Nick DERBIES
 mail: nick.derbies@linshare.org
@@ -660,7 +660,7 @@ mailHomeDirectory: /var/mail/peter.wilson@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/peter.wilson@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: peter.wilson
 cn: Peter WILSON
 mail: peter.wilson@linshare.org
@@ -683,7 +683,7 @@ mailHomeDirectory: /var/mail/walker.mccallister@linshare.org
 mailQuota: 100000000000000000000000
 mailStorageDirectory: maildir:/var/mail/walker.mccallister@linshare.org/Maildir
 mailUidNumber: 5008
-employeeType: External
+employeeType: Internal
 uid: walker.mccallister
 cn: Walker MCCALLISTER
 mail: walker.mccallister@linshare.org
