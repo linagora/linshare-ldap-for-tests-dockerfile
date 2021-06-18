@@ -1,0 +1,1273 @@
+dn: dc=linshare,dc=org
+dc: linshare
+o: linshare
+objectClass: dcObject
+objectClass: organization
+objectClass: top
+
+dn: cn=linshare,dc=linshare,dc=org
+cn: linshare
+objectClass: simpleSecurityObject
+objectClass: organizationalRole
+userPassword: linshare
+
+dn: ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: top
+objectClass: organizationalUnit
+ou: People
+description: People subtree
+
+dn: ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: top
+objectClass: organizationalUnit
+ou: People-simpsons
+description: People-simpsons subtree
+
+dn: ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: top
+objectClass: organizationalUnit
+ou: People-starwars
+description: People-starwars subtree
+
+dn: ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: top
+objectClass: organizationalUnit
+ou: People-house
+description: People-house subtree
+
+dn: ou=People-kaamelott,dc=linshare,dc=org
+changetype: add
+objectClass: top
+objectClass: organizationalUnit
+ou: People-kaamelott
+description: People-kaamelott subtree
+
+dn: ou=Groups,dc=linshare,dc=org
+changetype: add
+objectClass: top
+objectClass: organizationalUnit
+ou: Groups
+description: Groups subtree
+
+dn: uid=smtp,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: smtp
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/smtp@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/smtp@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: smtp
+uid: smtp
+cn: smtp
+mail: smtp@linshare.org
+sn: smtp
+givenName: smtp
+
+dn: uid=external1,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external1
+cn: External One
+mail: external1@linshare.org
+sn: One
+givenName: External
+userPassword: password1
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external1@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external1@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=external2,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external2
+cn: External Two
+mail: external2@linshare.org
+sn: Two
+givenName: External
+userPassword: password2
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external2@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external2@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=external3,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external3
+cn: External Three
+mail: external3@linshare.org
+sn: Three
+givenName: External
+userPassword: password3
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external3@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external3@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=external4,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external4
+cn: External Four
+mail: external4@linshare.org
+sn: Four
+givenName: External
+userPassword: password4
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external4@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external4@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=external5,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: external5
+cn: External Five
+mail: external5@linshare.org
+sn: Five
+givenName: External
+userPassword: password5
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/external5@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/external5@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest1,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest1
+cn: Guest One
+mail: guest1@linshare.org
+sn: One
+givenName: Guest
+userPassword: password1
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest1@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest1@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest2,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest2
+cn: Guest Two
+mail: guest2@linshare.org
+sn: Two
+givenName: Guest
+userPassword: password2
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest2@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest2@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest3,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest3
+cn: Guest Three
+mail: guest3@linshare.org
+sn: Three
+givenName: Guest
+userPassword: password3
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest3@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest3@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest4,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest4
+cn: Guest Four
+mail: guest4@linshare.org
+sn: Four
+givenName: Guest
+userPassword: password4
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest4@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest4@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=guest5,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+uid: guest5
+cn: Guest Five
+mail: guest5@linshare.org
+sn: Five
+givenName: Guest
+userPassword: password5
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/guest5@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/guest5@linshare.org/Maildir
+mailUidNumber: 5000
+employeeType: External
+
+dn: uid=abbey.curry,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/abbey.curry@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/abbey.curry@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: abbey.curry
+cn: Abbey CURRY
+mail: abbey.curry@linshare.org
+sn: CURRY
+givenName: Abbey
+
+
+dn: uid=amy.wolsh,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/amy.wolsh@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/amy.wolsh@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: amy.wolsh
+cn: Amy WOLSH
+mail: amy.wolsh@linshare.org
+sn: WOLSH
+givenName: Amy
+
+dn: uid=anderson.waxman,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/anderson.waxman@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/anderson.waxman@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: anderson.waxman
+cn: Anderson WAXMAN
+mail: anderson.waxman@linshare.org
+sn: WAXMAN
+givenName: Anderson
+
+
+dn: uid=cornell.able,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/cornell.able@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/cornell.able@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: cornell.able
+cn: Cornell ABLE
+mail: cornell.able@linshare.org
+sn: ABLE
+givenName: Cornell
+
+
+dn: uid=dawson.waterfield,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/dawson.waterfield@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/dawson.waterfield@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: dawson.waterfield
+cn: Dawson WATERFIELD
+mail: dawson.waterfield@linshare.org
+sn: WATERFIELD
+givenName: Dawson
+
+
+dn: uid=felton.gumper,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/felton.gumper@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/felton.gumper@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: felton.gumper
+cn: Felton GUMPER
+mail: felton.gumper@linshare.org
+sn: GUMPER
+givenName: Felton
+
+
+dn: uid=grant.big,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/grant.big@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/grant.big@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: grant.big
+cn: Grant BIG
+mail: grant.big@linshare.org
+sn: BIG
+givenName: Grant
+
+
+dn: uid=nick.derbies,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/nick.derbies@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/nick.derbies@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: nick.derbies
+cn: Nick DERBIES
+mail: nick.derbies@linshare.org
+sn: DERBIES
+givenName: Nick
+
+
+dn: uid=peter.wilson,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/peter.wilson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/peter.wilson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: peter.wilson
+cn: Peter WILSON
+mail: peter.wilson@linshare.org
+sn: WILSON
+givenName: Peter
+
+
+dn: uid=walker.mccallister,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/walker.mccallister@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/walker.mccallister@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: walker.mccallister
+cn: Walker MCCALLISTER
+mail: walker.mccallister@linshare.org
+sn: MCCALLISTER
+givenName: Walker
+
+
+dn: uid=bart.simpson,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/bart.simpson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/bart.simpson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: bart.simpson
+cn: Bart SIMPSON
+mail: bart.simpson@linshare.org
+sn: SIMPSON
+givenName: Bart
+
+dn: uid=lisa.simpson,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/lisa.simpson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/lisa.simpson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: lisa.simpson
+cn: Lisa SIMPSON
+mail: lisa.simpson@linshare.org
+sn: SIMPSON
+givenName: Lisa
+
+dn: uid=homer.simpson,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/homer.simpson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/homer.simpson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: homer.simpson
+cn: Homer SIMPSON
+mail: homer.simpson@linshare.org
+sn: SIMPSON
+givenName: Homer
+
+dn: uid=maggie.simpson,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/maggie.simpson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/maggie.simpson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: maggie.simpson
+cn: Maggie SIMPSON
+mail: maggie.simpson@linshare.org
+sn: SIMPSON
+givenName: Maggie
+
+dn: uid=marge.simpson,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/marge.simpson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/marge.simpson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: marge.simpson
+cn: Marge SIMPSON
+mail: marge.simpson@linshare.org
+sn: SIMPSON
+givenName: Marge
+
+dn: uid=carl.carlson,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/carl.carlson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/carl.carlson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: carl.carlson
+cn: Carl CARLSON
+mail: carl.carlson@linshare.org
+sn: CARLSON
+givenName: Carl
+
+dn: uid=edna.krapabelle,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/edna.krapabelle@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/edna.krapabelle@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: edna.krapabelle
+cn: Edna KRAPABELLE
+mail: edna.krapabelle@linshare.org
+sn: KRAPABELLE
+givenName: Edna
+
+dn: uid=krusty.the-clown,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/krusty.the-clown@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/krusty.the-clown@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: krusty.the-clown
+cn: krusty.The CLOWN
+mail: krusty.the-clown@linshare.org
+sn: CLOWN
+givenName: krusty.The
+
+dn: uid=lenny.leonard,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/lenny.leonard@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/lenny.leonard@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: lenny.leonard
+cn: Lenny LEONARD
+mail: lenny.leonard@linshare.org
+sn: LEONARD
+givenName: Lenny
+
+dn: uid=moe.szyslak,ou=People-simpsons,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/moe.szyslak@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/moe.szyslak@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: moe.szyslak
+cn: Moe SZYSLAK
+mail: moe.szyslak@linshare.org
+sn: SZYSLAK
+givenName: Moe
+
+dn: uid=allison.cameron,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/allison.cameron@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/allison.cameron@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: allison.cameron
+cn: Allison CAMERON
+mail: allison.cameron@linshare.org
+sn: CAMERON
+givenName: Allison
+
+dn: uid=chris.taub,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/chris.taub@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/chris.taub@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: chris.taub
+cn: Chris TAUB
+mail: chris.taub@linshare.org
+sn: TAUB
+givenName: Chris
+
+dn: uid=eric.foreman,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/eric.foreman@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/eric.foreman@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: eric.foreman
+cn: Eric FOREMAN
+mail: eric.foreman@linshare.org
+sn: FOREMAN
+givenName: Eric
+
+dn: uid=gregory.house,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/gregory.house@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/gregory.house@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: gregory.house
+cn: Gregory HOUSE
+mail: gregory.house@linshare.org
+sn: HOUSE
+givenName: Gregory
+
+dn: uid=james.wilson,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/james.wilson@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/james.wilson@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: james.wilson
+cn: James WILSON
+mail: james.wilson@linshare.org
+sn: WILSON
+givenName: James
+
+dn: uid=lisa.cuddy,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/lisa.cuddy@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/lisa.cuddy@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: lisa.cuddy
+cn: Lisa CUDDY
+mail: lisa.cuddy@linshare.org
+sn: CUDDY
+givenName: Lisa
+
+dn: uid=remy.hadley,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/remy.hadley@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/remy.hadley@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: remy.hadley
+cn: Remy HADLEY
+mail: remy.hadley@linshare.org
+sn: HADLEY
+givenName: Remy
+
+dn: uid=robert.chase,ou=People-house,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/robert.chase@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/robert.chase@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: robert.chase
+cn: Robert CHASE
+mail: robert.chase@linshare.org
+sn: CHASE
+givenName: Robert
+
+dn: uid=arthur.pendragon,ou=People-kaamelott,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/arthur.pendragon@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/arthur.pendragon@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: arthur.pendragon
+cn: Arthur PENDRAGON
+mail: arthur.pendragon@linshare.org
+sn: PENDRAGON
+givenName: Arthur
+
+dn: uid=karadoc.devannes,ou=People-kaamelott,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/karadoc.devannes@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/karadoc.devannes@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: karadoc.devannes
+cn: Karadoc DEVANNES
+mail: karadoc.devannes@linshare.org
+sn: DEVANNES
+givenName: Karadoc
+
+dn: uid=lancelot.dulac,ou=People-kaamelott,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/lancelot.dulac@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/lancelot.dulac@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: lancelot.dulac
+cn: Lancelot DULAC
+mail: lancelot.dulac@linshare.org
+sn: DULAC
+givenName: Lancelot
+
+dn: uid=leodagan.decarmelide,ou=People-kaamelott,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/leodagan.decarmelide@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/leodagan.decarmelide@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: leodagan.decarmelide
+cn: Leodagan DECARMELIDE
+mail: leodagan.decarmelide@linshare.org
+sn: DECARMELIDE
+givenName: Leodagan
+
+dn: uid=perceval.legallois,ou=People-kaamelott,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/perceval.legallois@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/perceval.legallois@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: perceval.legallois
+cn: Perceval LEGALLOIS
+mail: perceval.legallois@linshare.org
+sn: LEGALLOIS
+givenName: Perceval
+
+dn: uid=anakin.skywalker,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/anakin.skywalker@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/anakin.skywalker@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: anakin.skywalker
+cn: Anakin SKYWALKER
+mail: anakin.skywalker@linshare.org
+sn: SKYWALKER
+givenName: Anakin
+
+dn: uid=c-3po,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/c-3po@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/c-3po@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: c-3po
+cn: C 3PO
+mail: c-3po@linshare.org
+sn: 3PO
+givenName: C
+
+dn: uid=chewbacca,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/chewbacca@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/chewbacca@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: chewbacca
+cn: Chew BACCA
+mail: chewbacca@linshare.org
+sn: BACCA
+givenName: Chew
+
+dn: uid=han.solo,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/han.solo@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/han.solo@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: han.solo
+cn: Han SOLO
+mail: han.solo@linshare.org
+sn: SOLO
+givenName: Han
+
+dn: uid=jarjar.binks,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/jarjar.binks@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/jarjar.binks@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: jarjar.binks
+cn: Jarjar BINKS
+mail: jarjar.binks@linshare.org
+sn: BINKS
+givenName: Jarjar
+
+dn: uid=luke.skywalker,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/luke.skywalker@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/luke.skywalker@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: luke.skywalker
+cn: Luke SKYWALKER
+mail: luke.skywalker@linshare.org
+sn: SKYWALKER
+givenName: Luke
+
+dn: uid=obi-wan.kenobi,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/obi-wan.kenobi@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/obi-wan.kenobi@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: obi-wan.kenobi
+cn: Obi-Wan KENOBI
+mail: obi-wan.kenobi@linshare.org
+sn: KENOBI
+givenName: Obi-Wan
+
+dn: uid=padme.amidala,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/padme.amidala@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/padme.amidala@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: padme.amidala
+cn: Padme AMIDALA
+mail: padme.amidala@linshare.org
+sn: AMIDALA
+givenName: Padme
+
+dn: uid=qui-gon.jinn,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/qui-gon.jinn@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/qui-gon.jinn@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: qui-gon.jinn
+cn: Qui-Gon JINN
+mail: qui-gon.jinn@linshare.org
+sn: JINN
+givenName: Qui-Gon
+
+dn: uid=r2-d2,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/r2-d2@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/r2-d2@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: r2-d2
+cn: R2 D2
+mail: r2-d2@linshare.org
+sn: D2
+givenName: R2
+
+dn: uid=yoda,ou=People-starwars,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/yoda@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/yoda@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: yoda
+cn: Minch Yoda
+mail: yoda@linshare.org
+sn: Yoda
+givenName: Minch
