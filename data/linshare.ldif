@@ -1271,3 +1271,79 @@ cn: Minch Yoda
 mail: yoda@linshare.org
 sn: Yoda
 givenName: Minch
+
+
+
+# Titan
+dn: cn=workgroup-wg-titan,ou=Groups,dc=linshare,dc=org
+cn: workgroup-wg-titan
+objectClass: groupOfNames
+member: uid=peter.wilson,ou=People,dc=linshare,dc=org
+member: uid=amy.wolsh,ou=People,dc=linshare,dc=org
+
+dn: cn=contributors,cn=workgroup-wg-titan,ou=Groups,dc=linshare,dc=org
+cn: contributors
+objectClass: groupOfNames
+member: uid=peter.wilson,ou=People,dc=linshare,dc=org
+
+dn: cn=writers,cn=workgroup-wg-titan,ou=Groups,dc=linshare,dc=org
+cn: writers
+objectClass: groupofNames
+member: uid=cornell.able,ou=People,dc=linshare,dc=org
+
+# Apollo
+dn: cn=workgroup-wg-Apollo,ou=Groups,dc=linshare,dc=org
+cn: workgroup-wg-Apollo
+objectClass: groupOfNames
+member: uid=cornell.able,ou=People,dc=linshare,dc=org
+
+dn: cn=contributors,cn=workgroup-wg-Apollo,ou=Groups,dc=linshare,dc=org
+cn: contributors
+objectClass: groupOfNames
+member: uid=peter.wilson,ou=People,dc=linshare,dc=org
+
+dn: cn=writers,cn=workgroup-wg-Apollo,ou=Groups,dc=linshare,dc=org
+cn: writers
+objectClass: groupOfNames
+member: uid=cornell.able,ou=People,dc=linshare,dc=org
+
+# Yosemite
+dn: cn=workgroup-wg-Yosemite,ou=Groups,dc=linshare,dc=org
+cn: workgroup-wg-Yosemite
+objectClass: groupOfNames
+member: uid=amy.wolsh,ou=People,dc=linshare,dc=org
+member: uid=cornell.able,ou=People,dc=linshare,dc=org
+
+dn: cn=contributors,cn=workgroup-wg-Yosemite,ou=Groups,dc=linshare,dc=org
+cn: contributors
+objectClass: groupOfNames
+member: uid=peter.wilson,ou=People,dc=linshare,dc=org
+member: uid=amy.wolsh,ou=People,dc=linshare,dc=org
+
+dn: cn=writers,cn=workgroup-wg-Yosemite,ou=Groups,dc=linshare,dc=org
+cn: writers
+objectClass: groupOfNames
+member: uid=peter.wilson,ou=People,dc=linshare,dc=org
+member: uid=anderson.waxman,ou=People,dc=linshare,dc=org
+
+
+# Drives
+dn: cn=drive-drive-manhattan,ou=Groups,dc=linshare,dc=org
+cn: drive-drive-manhattan
+objectClass: groupOfNames
+member: uid=peter.wilson,ou=People,dc=linshare,dc=org
+
+dn: cn=contributors,cn=drive-drive-manhattan,ou=Groups,dc=linshare,dc=org
+cn: contributors
+objectClass: groupOfNames
+member: uid=amy.wolsh,ou=People,dc=linshare,dc=org
+
+dn: cn=writers,cn=drive-drive-manhattan,ou=Groups,dc=linshare,dc=org
+cn: writers
+objectClass: groupOfNames
+member: uid=felton.gumper,ou=People,dc=linshare,dc=org
+
+dn: cn=drive_writers,cn=drive-drive-manhattan,ou=Groups,dc=linshare,dc=org
+cn: drive_writers
+objectClass: groupOfNames
+member: uid=grant.big,ou=People,dc=linshare,dc=org
