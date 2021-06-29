@@ -10,6 +10,9 @@ ENV LDAP_ADMIN_PASSWORD=adminlinshare
 
 COPY schema/postfix-book.ldif /schema/custom.ldif
 COPY data/linshare.ldif /ldifs/linshare.ldif
+COPY ssl/* /opt/bitnami/openldap/certs/
 
-EXPOSE 1389
-# EXPOSE 1636
+ENV LDAP_ENABLE_TLS=yes
+ENV LDAP_TLS_CERT_FILE=/opt/bitnami/openldap/certs/linshare.pem
+ENV LDAP_TLS_KEY_FILE=/opt/bitnami/openldap/certs/linshare.key
+ENV LDAP_TLS_CA_FILE=/opt/bitnami/openldap/certs/ca.pem

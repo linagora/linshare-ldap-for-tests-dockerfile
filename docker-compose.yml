@@ -1,17 +1,43 @@
+# vim: syntax=yaml textwidth=120 expandtab tabstop=2 softtabstop=2 shiftwidth=2 autoindent
+
+# Docker compose file for a full-featured Linshare architecture
 version: '3.7'
 
+networks:
+  default:
+    driver: bridge
+    ipam:
+      driver: default
+      config:
+        - subnet: 172.101.0.0/16
+
 services:
-    ldap:
-        # image: linagora/linshare-ldap-for-tests:1.0
-        build: .
-        container_name: linshare_ldap_build
-        tty: true
-        stdin_open: true
-        ports:
-          - 21389:389
-        environment:
-          - LDAP_LOG_LEVEL=256
-          - CONTAINER_LOG_LEVEL=4
-        command: --copy-service --loglevel debug
-#       volumes:
-#         - ./data.ldif:/container/service/slapd/assets/config/bootstrap/ldif/linshare.ldif
+
+  backend:
+    image: docker-registry.linagora.com:5000/linshare-snapshots/linshare-core-embedded-for-tests:master
+    container_name: linshare_backend_test
+    ports:
+      - 8080:8080
+   #volumes:
+   #   - ./conf/backend/log4j.properties:/etc/linshare/log4j.properties
+    healthcheck:
+      test: ["CMD", "curl", "-s", "-f", "http://localhost:8080/linshare/"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+  ldap:
+    container_name: linshare_ldap_test
+    image: docker-registry.linagora.com:5000/linshare-releases/linshare-ldap-for-tests:2.0
+#   volumes:
+#     - ./ssl:/opt/bitnami/openldap/certs
+    environment:
+      - BITNAMI_DEBUG=true
+#     - LDAP_ENABLE_TLS=yes
+#     - LDAP_TLS_CERT_FILE=/opt/bitnami/openldap/certs/linshare.pem
+#     - LDAP_TLS_KEY_FILE=/opt/bitnami/openldap/certs/linshare.key
+#     - LDAP_TLS_CA_FILE=/opt/bitnami/openldap/certs/ca.pem
+    ports:
+      - 2389:1389
+      - 2636:1636
