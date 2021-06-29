@@ -12,4 +12,4 @@ COPY schema/postfix-book.ldif /schema/custom.ldif
 COPY data/linshare.ldif /ldifs/linshare.ldif
 
 EXPOSE 1389
-EXPOSE 1636
+# EXPOSE 1636
