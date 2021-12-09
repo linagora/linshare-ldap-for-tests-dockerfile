@@ -500,6 +500,28 @@ mail: peter.wilson@linshare.org
 sn: WILSON
 givenName: Peter
 
+dn: uid=dwho,ou=People,dc=linshare,dc=org
+changetype: add
+objectClass: PostfixBookMailAccount
+objectClass: extensibleObject
+objectClass: top
+objectClass: person
+objectClass: organizationalPerson
+objectClass: inetOrgPerson
+userPassword: secret
+mailEnabled: TRUE
+mailGidNumber: 5000
+mailHomeDirectory: /var/mail/dwho@linshare.org
+mailQuota: 100000000000000000000000
+mailStorageDirectory: maildir:/var/mail/dwho@linshare.org/Maildir
+mailUidNumber: 5008
+employeeType: Internal
+uid: dwho
+cn: Doctor WHO
+mail: dwho@linshare.org
+sn: WHO
+givenName: Doctor
+
 
 dn: uid=walker.mccallister,ou=People,dc=linshare,dc=org
 changetype: add
