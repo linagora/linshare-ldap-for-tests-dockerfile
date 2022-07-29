@@ -23,7 +23,9 @@ build:
   <<: *build-docker-tpl
   stage: build
   variables:
-      DOCKER_HOST: "tcp://docker-dind"
+      DOCKER_HOST: "tcp://docker-dind:2375"
+      DOCKER_DRIVER: overlay2
+      DOCKER_TLS_CERTDIR: ""
   script:
     - docker build . -t build:latest
   except:
@@ -54,7 +56,9 @@ snapshot:
   <<: *build-docker-tpl
   stage: release
   variables:
-      DOCKER_HOST: "tcp://docker-dind"
+      DOCKER_HOST: "tcp://docker-dind:2375"
+      DOCKER_DRIVER: overlay2
+      DOCKER_TLS_CERTDIR: ""
       DOCKER_IMAGE_PRIVATE: "docker-registry.linagora.com:5000/linshare-snapshots/linshare-ldap-for-tests"
   script:
     - export DOCKER_TAGS=latest
@@ -73,7 +77,9 @@ docker-release:
   <<: *build-docker-tpl
   stage: release
   variables:
-      DOCKER_HOST: "tcp://docker-dind"
+      DOCKER_HOST: "tcp://docker-dind:2375"
+      DOCKER_DRIVER: overlay2
+      DOCKER_TLS_CERTDIR: ""
       DOCKER_IMAGE_PRIVATE: "docker-registry.linagora.com:5000/linshare-releases/linshare-ldap-for-tests"
       DOCKER_IMAGE_PUBLIC: "linagora/linshare-ldap-for-tests"
   script:
@@ -96,7 +102,9 @@ mark-as-latest:
   stage: publish
   variables:
       GIT_STRATEGY: none
-      DOCKER_HOST: "tcp://docker-dind"
+      DOCKER_HOST: "tcp://docker-dind:2375"
+      DOCKER_DRIVER: overlay2
+      DOCKER_TLS_CERTDIR: ""
       DOCKER_IMAGE_PRIVATE: "docker-registry.linagora.com:5000/linshare-releases/linshare-ldap-for-tests"
       DOCKER_IMAGE_PUBLIC: "linagora/linshare-ldap-for-tests"
   script:
