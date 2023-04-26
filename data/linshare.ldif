@@ -386,27 +386,6 @@ sn: ABLE
 givenName: Cornell
 
 
-dn: uid=dawson.waterfield,ou=People,dc=linshare,dc=org
-changetype: add
-objectClass: PostfixBookMailAccount
-objectClass: extensibleObject
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-userPassword: secret
-mailEnabled: TRUE
-mailGidNumber: 5000
-mailHomeDirectory: /var/mail/dawson.waterfield@linshare.org
-mailQuota: 100000000000000000000000
-mailStorageDirectory: maildir:/var/mail/dawson.waterfield@linshare.org/Maildir
-mailUidNumber: 5008
-employeeType: Internal
-uid: dawson.waterfield
-cn: Dawson WATERFIELD
-mail: dawson.waterfield@linshare.org
-sn: WATERFIELD
-givenName: Dawson
 
 
 dn: uid=felton.gumper,ou=People,dc=linshare,dc=org
