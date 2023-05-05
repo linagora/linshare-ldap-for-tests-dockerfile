@@ -340,54 +340,6 @@ mail: amy.wolsh@linshare.org
 sn: WOLSH
 givenName: Amy
 
-dn: uid=anderson.waxman,ou=People,dc=linshare,dc=org
-changetype: add
-objectClass: PostfixBookMailAccount
-objectClass: extensibleObject
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-userPassword: secret
-mailEnabled: TRUE
-mailGidNumber: 5000
-mailHomeDirectory: /var/mail/anderson.waxman@linshare.org
-mailQuota: 100000000000000000000000
-mailStorageDirectory: maildir:/var/mail/anderson.waxman@linshare.org/Maildir
-mailUidNumber: 5008
-employeeType: Internal
-uid: anderson.waxman
-cn: Anderson WAXMAN
-mail: anderson.waxman@linshare.org
-sn: WAXMAN
-givenName: Anderson
-
-
-dn: uid=cornell.able,ou=People,dc=linshare,dc=org
-changetype: add
-objectClass: PostfixBookMailAccount
-objectClass: extensibleObject
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-userPassword: secret
-mailEnabled: TRUE
-mailGidNumber: 5000
-mailHomeDirectory: /var/mail/cornell.able@linshare.org
-mailQuota: 100000000000000000000000
-mailStorageDirectory: maildir:/var/mail/cornell.able@linshare.org/Maildir
-mailUidNumber: 5008
-employeeType: Internal
-uid: cornell.able
-cn: Cornell ABLE
-mail: cornell.able@linshare.org
-sn: ABLE
-givenName: Cornell
-
-
-
-
 dn: uid=felton.gumper,ou=People,dc=linshare,dc=org
 changetype: add
 objectClass: PostfixBookMailAccount
@@ -432,29 +384,6 @@ cn: Grant BIG
 mail: grant.big@linshare.org
 sn: BIG
 givenName: Grant
-
-
-dn: uid=nick.derbies,ou=People,dc=linshare,dc=org
-changetype: add
-objectClass: PostfixBookMailAccount
-objectClass: extensibleObject
-objectClass: top
-objectClass: person
-objectClass: organizationalPerson
-objectClass: inetOrgPerson
-userPassword: secret
-mailEnabled: TRUE
-mailGidNumber: 5000
-mailHomeDirectory: /var/mail/nick.derbies@linshare.org
-mailQuota: 100000000000000000000000
-mailStorageDirectory: maildir:/var/mail/nick.derbies@linshare.org/Maildir
-mailUidNumber: 5008
-employeeType: Internal
-uid: nick.derbies
-cn: Nick DERBIES
-mail: nick.derbies@linshare.org
-sn: DERBIES
-givenName: Nick
 
 
 dn: uid=peter.wilson,ou=People,dc=linshare,dc=org
